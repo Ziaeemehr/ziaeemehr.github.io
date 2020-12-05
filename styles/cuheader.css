@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#cuheader {
+	position: relative;
+	width: 960px;
+	height: 120px;
+	background-color: #000;
+}
+
+#cuheader h1 {
+	padding: 0;
+	margin: 0;
+}
+
+#cuheader h1 a {
+	display: block;
+	height: 120px;
+	width: 700px;
+	text-indent: -9999px;
+	background-image: url(../images/cu_banner.png);
+	background-repeat: no-repeat;
+}
+
+#search {
+	position: absolute;
+	top: 31px;
+	right: 20px;
+	width: 223px;
+	font-size: 11px;
+	border-radius: 5px;
+	font-family: 'Verdana', 'Geneva', sans-serif;
+	word-wrap: break-word;
+}
+
+#culinks {
+	padding: 5px 10px;
+	word-wrap: break-word;
+}
+
+#search form {
+	margin: 0;
+	padding: 0 10px 7px;
+}
+
+#inputwrapper {
+	height: 22px;
+	float: left;
+}
+
+#search input.text {
+	border: none;	
+	height: 16px;
+	width: 170px;
+	font-family: 'Tahoma', 'Helvetica', 'Arial', sans-serif;
+	font-size: inherit;
+	line-height: 16px;
+	padding: 3px 5px;
+}
+
+#search a:link,
+#search a:visited,
+#search a:hover {
+	text-decoration: none;
+}
+
+.dark {
+	background-color: #5C5C5C;
+	color: #FFF;
+}
+
+.dark a:link,
+.dark a:visited,
+.dark a:hover {
+	color: #FFF;	
+}
+
+.dark #inputwrapper,
+.dark input.text {
+	background-color: #999;
+}
+
+#search label {
+	position: absolute;
+	top: 0;
+	left: -9999px;
+}
+
+#search image {
+	border: none;
+}
+
+#submit {
+	border: none;
+}
