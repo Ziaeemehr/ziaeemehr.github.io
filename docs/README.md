@@ -12,6 +12,6 @@ The website is available here: https://ziaeemehr.github.io/
 </br>
 
 Repositories of my papers:
-- [Frontiers 2021 (accepted)](https://github.com/Ziaeemehr/Frontiers2021)
+- [Frontiers 2021](https://github.com/Ziaeemehr/Frontiers2021)
 - [Neural Network 2020](https://github.com/ITNG/ziaeeNN2020)
 - [Scientific Reports 2020](https://github.com/Ziaeemehr/SReport2020)
