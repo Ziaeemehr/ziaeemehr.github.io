@@ -1,0 +1,243 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+
+\moderncvcolor{purple}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+%\usepackage{url}
+% adjust the page margins
+\usepackage[scale=1, margin=2.5cm]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\usepackage[colorlinks]{hyperref}
+
+% personal data
+\name{Abolfazl}{ZIAEE MEHR}
+%\title{Curriculum Vitae}                              
+\address{27, Boulevard Jean Moulin}{13005 Marseille}{France}% 
+\phone[mobile]{+33~(605)~62~4346}                   % optional, remove / comment the 
+%\phone[fixed]{+98~(24)~3315~2127}                    % optional, remove / comment the 
+\email{abolfazl.ziaee-mehr@univ-amu.fr}                               % optional, remove / 
+\homepage{github.com/Ziaeemehr}
+%\homepage{}
+%\url{https://iasbs.ac.ir/~a.ziaeemehr/}                         % 
+\photo[80pt][0.4pt]{picture0}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+%I am a postdoctoral researcher at Institut de Neuroscience des Systèmes- Inserm UMR 1106 at Aix-Marseille University, France, under the direction of Prof. Viktor Jirsa aims to use Bayesian inference and deep learning techniques to infer the dynamics of personalized large scale brain network focusing on epilepsy and aging.
+
+I am a computational neuroscientist. My research focuses on developing Bayesian methods to study the whole brain network dynamics. I also have experience with deep learning methods and have applied these techniques to analyze data from electrophysiological recordings on rats/humans.
+ 
+%I got my Ph.D. in Computational Neuroscience at Institute for Advanced Studies in Basic Science (IASBS) Zanjan, Iran. Currently, I have some collaboration   
+%at Institute for Research in Fundamental Sciences (\textit{IPM Tehran}) as a researcher and I am data scientist at \textit{Panoptopia} company.
+%My thesis meeting has been scheduled for the next week, but it will be postponed for a few weeks until normal condition and reopening the university.
+%\section{University Education}
+%\cventry{2014--present}{PhD in Computational Physics}{Institute for Advanced Studies in Basic Science}{Zanjan}{\textit{Iran}}{}  % arguments 3 to 6 can be left empty
+
+\section{\textbf{Education}}
+\cvitem{2021-present}{Postdoctoral Researcher at Institut de Neuroscience des Systèmes- Inserm UMR 1106 at Aix-Marseille University, France, under the direction of Dr. Viktor Jirsa.}
+\cvitem{2014-2020}{Ph.D. in Computational neuroscience, Institute for Advanced Studies in Basic Sciences, GPA: 18.08/20, Supervisors: Dr. Mina Zarei, Dr. Alireza Valizadeh, Thesis title: \textit{Synchronization dynamics on undirected and directed hierarchical networks}.}
+\cvitem{2011-2013}{*Compulsory military service leave.}
+\cvitem{2008-2011}{M.S. in Solid State Physics, University of Qazvin (IKIU), GPA: 15.5/20, Supervisor: Dr. Reza Poursalehi, Thesis title: \textit{Calculation of optical properties of metallic nanoparticles}.}
+\cvitem{2004-2008}{B.S. in Physics, University of Qom, GPA: 16.64/20 (Second Class Honors)}
+
+\section{\textbf{Research Interest}}
+\begin{itemize}
+	
+	\cvitem{}{%\item Computational Neuroscience;
+		\item Bayesian parameter estimation methods and Machine/Deep learning approaches .
+		\item Network Neuroscience: Complex network approaches to brain structure and function
+		\item Computational Neuroscience: Dynamic models of brain networks, neural synchrony, information transfer measurements in complex networks.
+		%\item Structure-Dynamics interplay;
+		%\item Information theory;
+		%\item Bayesian inference: 
+	}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{List of Publications}}
+\cvitem{Mar 2023}{G. Rabuffo, H. Armelle, Z. Li, \textbf{A. Ziaeemehr}, M. Hashemi, P. Sorrentino, A. Ghestem, P. Quilichini, K. Chuang, T. Perles-Babacaru, V. Jirsa and C. Bernard, \textbf{Inferring the mechanisms of resting-state mouse network reconfiguration upon focal region silencing}, Conference poster, NetSci 2023.}
+
+\cvitem{Mar 2023}{\textbf{A. Ziaeemehr}, M. Hashemi, A. Vattikonda, V. Sip, H. Wang, S. Petkoski, M. Woodman and V. Jirsa, \textbf{Efficient Bayesian Inference for Virtual Brain Modeling: Incorporating Prior Information and automatic Algorithms for Disorder Prediction}, Conference poster, HBP Summit 2023.}
+
+\cvitem{Mar 2023}{M. Woodman, M. Hashemi, \textbf{A. Ziaeemehr}, A. Vattikonda, J. Fousek and V. Jirsa \textbf{Accelerated inference on fields: virtual brains in JAX.}, Conference paper, HBP Summit 2023.}
+
+\cvitem{Mar 2023}{Sorrentino P, Pathak, \textbf{Ziaeemehr}, Lopez, Cipriano, Bonavita, Quarantelli, Banerjee, Hashemi, Jirsa, \textbf{The virtual multiple sclerosis patient: on the clinical-radiological paradox}, Submitted to Brain.}
+
+\cvitem{Feb 2023}{Yalcinkaya, B.H., \textbf{Ziaeemehr}, A., Fousek, J., Hashemi, M., Lavanga, M., Solodkin, A., McIntosh, R., Jirsa, V. and Petkoski, S., 2023. \textbf{Personalized virtual brains of Alzheimer's Disease link dynamical biomarkers of fMRI with increased local excitability}. \href{https://www.medrxiv.org/content/10.1101/2023.01.11.23284438v1}{medRxiv, pp.2023-01}.}
+
+\cvitem{Feb 2021}{\textbf{A. Ziaeemehr}, and A. Valizadeh, 2020. \textbf{Frequency-resolved functional connectivity: Role of delay and the strength of connections}, \href{https://doi.org/10.3389/fncir.2021.608655}{Frontiers in neural circuits, 2021 Mar}.}
+
+\cvitem{Jul 2020}{\textbf{A. Ziaeemehr}, M. Zarei, A. Valizadeh, C. Mirasso, \textbf{Frequency-dependent organization of the brain's functional network through delayed-interactions}. \href{https://www.sciencedirect.com/science/article/abs/pii/S0893608020302926}{J. Neural Networks, 2020 Aug.}}
+
+\cvitem{Feb 2020}{\textbf{A. Ziaeemehr}, M. Zarei, A. Sheshbolouki, \textbf{Emergence of global synchronization in directed excitatory networks of type I neurons}. \href{https://www.nature.com/articles/s41598-020-60205-0}{\textit{Scientific Reports. 2020 Feb 24;10(1):1-1.}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textbf{Work and Research experience}}
+\cvitem{Mar 2021-Sep 2021}{Senior scientific developer at Panoptopia, \textit{preparing python packages for costing and Risk management}.}
+
+\cvitem{Sep 2020-Mar 2021}{Researcher at Institute for Research in Fundamental Sciences (IPM), Tehran, Supervisors: Prof. Alireza Valizadeh, Prof. Abdol-Hossein Vahabie, Research title: \textit{Modeling the Basal Ganglia for Parkinson disease}.}
+
+%\cvitem{Oct 2020}{Neuromatch Conference 3, \textit{Effects of Anti-Hebbian learning on the synchronization and structure of directed networks with pure and hybrid inhibitory and excitatory couplings}.}
+%
+%\cvitem{Sep 2020}{Bernstein Conference online, \textit{Frequency-dependent functional connectivity: Role of delay and	connections strength}.}
+%
+%\cvitem{May 2020}{Neuromatch Conference 2, \textit{Emergence of global synchronization in directed excitatory networks of type I neurons}.}
+
+\cvitem{Apr 2019-Feb 2020}{Research assistance at Institute for Research in Fundamental Sciences (IPM), Tehran, Supervisor: Prof. Abdolhosein Abbasian, Research title: \textit{Studying the	chimera state and using neuronal population models to study the Chimera-like states on the human connectome}.}
+
+\cvitem{Apr 2018-Sep 2018}{Research visitor, at university of Granada, Computational Physics Group, Supervisor: Prof. Joaquin J. Torres, Research subject: \textit{Studying the phase-transition in the human connectom, analyzing the endurance of a weak signal in a noisy environments and the noise-induced volatility in a network of interacting LIF neurons}.}
+
+\cvitem{Jun 2011- May 2014}{spent 2 years for compulsory military service and preparing for Ph.D. period entrance exam.}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{\textbf{PhD thesis}}
+%\cvitem{Title}{\textbf{Synchronization dynamics on undirected and directed hierarchical networks}}
+%\cvitem{Supervisors}{Mina Zarei, Alireza Valizadeh}
+%\cvitem{Description}{The goal of my research was to develop a theoretical framework and computational tools for studying the collective behavior and synchronization of neural populations and phase oscillators. For example, I investigated the effects of the time delay, number, length, and place of directed loops, the interplay between node dynamics and network structure on the collective behavior of the networks. I also worked on the information processing at hierarchical complex networks.}
+
+
+%\subsection{\textbf{my contributions}}
+%\begin{itemize}
+%\cvitem{}{\item \href{https://github.com/Ziaeemehr/ModelingNeuralDynamics}{\textbf{ModelingNeuraldynamics}}, I wrote the codes for this book: "An Introduction to Modeling Neuronal Dynamics" by Borgers in python.
+%\item  \textbf{\href{https://github.com/Ziaeemehr/itng_toolbox}{itng toolbox}}, IASBS Theoretical Neuroscience Group toolbox, to analysis the time series, spike trains and graphs in python (Pypi: itng);
+%\item Developing nest simulator by adding new neuron models using nestml package, availabel on  \href{https://github.com/Ziaeemehr/itng_nest/tree/master/AddNewModule}{gihub}.}
+%\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Teaching Experience}}
+%\subsection{\textbf{Research}}
+%\cvitem{Present}{\textbf{\href{http://www.ipm.ac.ir/personalinfo.jsp?PeopleCode=IP0900034}{Dr, Vahabie, School of cognitive science, IPM, Tehran.}} Modeling Basal Ganglia network for Parkinson disease. Modeling and parameter estimation to find best fit of model to the experimental data recordings.}
+%\cvitem{2016-2020}{\textbf{\href{https://iasbs.ac.ir/~valizade/index.html}{Prof. Alireza Valizadeh and Prof Mina Zarei's research group}}. Studying topics such as optimization of synchronization in coupled oscillators and neural populations in presence of noise, interplay between structure and dynamics in connectome networks, information processing measurements, graph analysis approach to study complex networks, and analyzing the electrophysiological brain recording data.}
+%
+%\cvitem{2019}{\textbf{\href{http://www.ipm.ac.ir/personalinfo.jsp?PeopleCode=IP0000015}{Dr. Abbasian lab,School of congnitive science, IPM, Tehran}}. Studying the chimera state and using population models to find the chimera like states on the human connectome.}
+%
+%\cvitem{2018}{\textbf{\href{https://www.ugr.es/~jtorres/}{Dr. Joaquin J. Torres lab, university of Granada}}. A short visit for 6 month  in the department of electromagnetism and matter physics, Universidad de Granada, Spain. Including the study of phase-transition phenomena and analyzing to what extent a weak signal endures in noisy environments. We also studied the noise-induced volatility in a network of interacting LIF neurons. I had useful discussions with Dr. Muñoz.}
+
+\cvitem{Jul 2020}{\textbf{TA} at Neuromatch Academy 3 weeks summer school.}
+\cvitem{2016-2017}{\textbf{Workshop Lecturer}, Holding workshops at IASBS on \href{https://gitlab.com/a.ziaeemehr/Workshop\_scripting2016}{Python scripting} for scientific programming several times, and also some other programming sessions on \href{https://github.com/Ziaeemehr/workshop_julia}{Julia}, \href{https://github.com/Ziaeemehr/cpp_workshop}{C++} and neuron simulation packages like \href{https://github.com/Ziaeemehr/workshop_brian}{Brian} and \href{https://github.com/Ziaeemehr/itng_nest}{Nest simulator}.}
+\cvitem{2015-2016}{Being \textbf{TA} several times in Ph.D. period in Classical Electrodynamics (I, II) and Computational Physics.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textbf{Notable events attended}}
+\cvitem{Sep 2021}{Simulation-based Inference for scientific discovery workshop, Mackelab.}
+\cvitem{Jal 2020}{Neuromatch Academy summer school.}
+\cvitem{Jan 2018}{Comprehensive Workshop on Analysis and Interpretation of Primate Electrophysiological data, Institute for Research in Fundamental Science(\textbf{IPM}), Tehran, Iran; }
+\cvitem{Mar 2017}{5th Workshop on Advanced Techniques for Scientific Programming and Management of Open Source Software Packages, \textbf{ICTP}, Sharif University, Tehran, Iran;}
+\cvitem{Oct 2016}{Introductory School on Parallel Programming and Parallel Architecture for High-Performance Computing, \textbf{ICTP}, Trieste,Italy;}
+\cvitem{Nov 2014}{High-Performance Computing and Grid computing (HPC8), Institute for Research in Fundamental Science(\textbf{IPM}), Tehran, Iran.}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\textbf{Voluntary Work, open source software development and contributions}}
+\begin{itemize}
+\cvitem{}{
+\item \textbf{\href{https://github.com/ITNG/ziaeeNN2020}{ziaeeNN2020}},
+This repository contains the source codes for reproducing results and figures of Neural Networks, 2020 paper.
+\item \textbf{\href{https://github.com/Ziaeemehr/SReport2020}{SReport2020}} This repository contains the source codes for reproducing results and figures of: Scientific Reports, 2020 paper.
+\item \textbf{\href{https://github.com/Ziaeemehr/Frontiers2021}{Frontiers2020}}, repository contains the source codes for reproducing results and figures of: Frontiers 2021 paper. 
+\item Contribution on nest simulator (\href{https://github.com/nest/nestml/pull/543}{PR 543}, \href{https://github.com/nest/nestml/pull/560}{PR560}) and Brian2 (\href{https://github.com/brian-team/brian2/pull/1265}{PR1265}).
+\item \textbf{\href{https://github.com/Ziaeemehr/parkinson_modeling}{Parkinson Modeling}},
+Implementing some most cited papers on modeling BG with spiking and rate models for Parkinson disease..
+\item \href{https://github.com/ITNG/itng_toolbox}{\textbf{ModelingNeuraldynamics}} and  \href{https://github.com/Ziaeemehr/mndynamics}{\textbf{mndynamics}}, I wrote the codes for this book: "An Introduction to Modeling Neuronal Dynamics" by Borgers in Python scripts and using Brian.
+%\item  \textbf{\href{https://github.com/ITNG/itng_toolbox}{itng toolbox}}, IASBS Theoretical Neuroscience Group toolbox, to analysis the time series, spike trains and graphs in python (Pypi: itng);
+\item \textbf{\href{https://github.com/Ziaeemehr/SBI}{SBI}},
+\textit{sbi} package by mackelab is a \textit{PyTorch} package for simulation-based inference. Simulation-based inference is the process of finding parameters of a simulator from observations. I provide some wrapper to integrate \textit{sbi} with the \textit{NEST simulator} and \textit{scipy}.
+\item \textbf{\href{https://github.com/Ziaeemehr/workshop_scripting}{workshop scripting}} This repository is created for weekly sessions of Python scripting course at IASBS and
+including many example and application from simple to complex.
+\item \textbf{\href{https://github.com/Ziaeemehr/workshop_julia}{workshop julia}} 
+The source code and examples for the Julia workshop including benchmarking simple
+and generalized Kuramoto model.
+\item \textbf{\href{https://github.com/Ziaeemehr/cpp_workshop}{workshop C++}}
+The source code and examples for the C++ workshop.
+}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Skills}}
+\cvitem{OS}{Ubuntu;}
+\cvitem{Languages}{Python, C++, Julia;}
+\cvitem{packages}{Nest Simulator, Brian, MNE-Python, TVB, ...;}
+\cvitem{GUI}{PyQtGraph, Dash}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Honors and Awards}}
+\cvitem{Jan 2018}{Scholarship by the Ministry of science of Iran for research at the \textit{Department of Electromagnetism and Matter Physics, Universidad de Granada, Spain}; }
+\cvitem{2014}{Rank 26 th among about 5000 people in entrance exames of Ph.D.;}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{Languages}}
+\cvlistdoubleitem{English:reading,writing,listening}{Very good}
+\cvlistdoubleitem{Persian}{Native}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{\textbf{Advanced Courses Passed}}
+%\cvitem{Ph.D. course}{Advanced scientific computation;}
+%\cvitem{Ph.D. course}{Parallel Computation and  optimization;}
+%\cvitem{Ph.D. course}{Statistical Physics of Fields;}
+%\cvitem{Self study} {Machine learning, Coursera, A. Ng}
+%\cvitem{Self study}{Neural Networks for Machine Learning, G. E. Hinton}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{\textbf{Reading inside Neuroscience}}
+%\begin{itemize}
+%\cvitem{}{
+%	\item Theoritical Neuroscience (Abbott);
+%	\item Networks: An Introduction (Newman);
+%	\item Modeling neuronal dynamics, (Borgers);
+%	\item Neuroscience : Exploring the Brain (Connors) ;
+%	\item Dynamical Systems in Neuroscience (Izhikevich);
+%	\item An Introduction to Transfer Entropy, (Bossomaier)
+%	\item Directed Information Measures in Neuroscience, (Wibral).
+%	\item Neuronal Dynamics From Single Neurons to Networks ... (Grestner);		
+%}
+%\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{\textbf{References}}
+\cventry{}{Viktor Jirsa}{Professor of Physics}{}{\href{mailto:viktor.jirsa@univ-amu.fr}{viktor.jirsa@univ-amu.fr}}{Tel: +33 0491324224}
+\cventry{}{Mina Zarei}{Assistant Professor of Physics}{}{\href{mailto:mina.zarei@iasbs.ac.ir}{mina.zarei@iasbs.ac.ir}}{Tel: +98 24 33152017}
+\cventry{}{Alireza Valizadeh}{Associate Professor of Physics}{}
+{\href{mailto:valizade@iasbs.ac.ir}{valizade@iasbs.ac.ir}}{Tel: +98 24 33152120}   
+\cventry{}{Meysam Hashemi}{Senior Researcher}{}{\href{mailto:meysam.hashemi@univ-amu.fr}{meysam.hashemi@univ-amu.fr}}{Tel: +33 695573212}
+%\cventry{}{Fahad Shahbazi}{Associate Professor of Physics}{}
+%{\href{mailto: shahbazi@cc.iut.ac.ir}{ shahbazi@cc.iut.ac.ir}}{Tel: +98 311 3913755}   
+
+\end{document}
+
+
+
