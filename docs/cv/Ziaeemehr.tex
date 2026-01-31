@@ -6,6 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
+\PassOptionsToPackage{colorlinks=true}{hyperref}
 \documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
@@ -23,7 +24,7 @@
 \usepackage[scale=1, margin=2.5cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-%\usepackage[colorlinks]{hyperref}
+% moderncv loads hyperref; options are passed above with \PassOptionsToPackage
 
 % personal data
 \name{Abolfazl}{ZIAEE MEHR}
@@ -35,7 +36,7 @@
 \homepage{github.com/Ziaeemehr}
 %\homepage{}
 %\url{https://iasbs.ac.ir/~a.ziaeemehr/}                         % 
-\photo[80pt][0.4pt]{picture0}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\photo[80pt][0.4pt]{../images/myimage.png}                       % updated image reference
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -57,7 +58,7 @@
 
 %I am a postdoctoral researcher at Institut de Neuroscience des Systèmes- Inserm UMR 1106 at Aix-Marseille University, France, under the direction of Prof. Viktor Jirsa aims to use Bayesian inference and deep learning techniques to infer the dynamics of personalized large scale brain network focusing on epilepsy and aging.
 
-I am a computational neuroscientist. My research focuses on developing Bayesian methods to study the whole brain network dynamics. I also have experience with deep learning methods and have applied these techniques to analyze data from electrophysiological recordings on rats/humans.
+I am a computational neuroscientist. My research focuses on developing Bayesian methods to study whole-brain network dynamics. I also have experience with deep learning methods and have applied these techniques to analyze data from electrophysiological recordings in rats and humans.
  
 %I got my Ph.D. in Computational Neuroscience at Institute for Advanced Studies in Basic Science (IASBS) Zanjan, Iran. Currently, I have some collaboration   
 %at Institute for Research in Fundamental Sciences (\textit{IPM Tehran}) as a researcher and I am data scientist at \textit{Panoptopia} company.
@@ -67,60 +68,69 @@ I am a computational neuroscientist. My research focuses on developing Bayesian 
 
 \section{\textbf{Education}}
 \cvitem{2021-present}{Postdoctoral Researcher at Institut de Neuroscience des Systèmes- Inserm UMR 1106 at Aix-Marseille University, France, under the direction of Dr. Viktor Jirsa.}
-\cvitem{2014-2020}{Ph.D. in Computational neuroscience, Institute for Advanced Studies in Basic Sciences, GPA: 18.08/20, Supervisors: Dr. Mina Zarei, Dr. Alireza Valizadeh, Thesis title: \textit{Synchronization dynamics on undirected and directed hierarchical networks}.}
-\cvitem{2011-2013}{*Compulsory military service leave.}
+\cvitem{2014-2020}{Ph.D. in Computational Neuroscience, Institute for Advanced Studies in Basic Sciences, GPA: 18.08/20, Supervisors: Dr. Mina Zarei, Dr. Alireza Valizadeh, Thesis title: \textit{Synchronization dynamics on undirected and directed hierarchical networks}.}
+\cvitem{2011-2013}{Compulsory military service.}
 \cvitem{2008-2011}{M.S. in Solid State Physics, University of Qazvin (IKIU), GPA: 15.5/20, Supervisor: Dr. Reza Poursalehi, Thesis title: \textit{Calculation of optical properties of metallic nanoparticles}.}
 \cvitem{2004-2008}{B.S. in Physics, University of Qom, GPA: 16.64/20 (Second Class Honors)}
 
 \section{\textbf{Research Interest}}
+\cvitem{}{%
 \begin{itemize}
-	
-	\cvitem{}{%\item Computational Neuroscience;
-		\item Bayesian parameter estimation methods and Machine/Deep learning approaches .
-		\item Network Neuroscience: Complex network approaches to brain structure and function
-		\item Computational Neuroscience: Dynamic models of brain networks, neural synchrony, information transfer measurements in complex networks.
-		%\item Structure-Dynamics interplay;
-		%\item Information theory;
-		%\item Bayesian inference: 
-	}
+\item Bayesian parameter estimation methods and machine/deep learning approaches.
+	\item Network Neuroscience: Complex network approaches to brain structure and function
+	\item Computational Neuroscience: Dynamic models of brain networks, neural synchrony, information transfer measurements in complex networks.
+	%\item Structure-Dynamics interplay;
+	%\item Information theory;
+	%\item Bayesian inference:
 \end{itemize}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\textbf{List of Publications}}
-\cvitem{Mar 2023}{G. Rabuffo, H. Armelle, Z. Li, \textbf{A. Ziaeemehr}, M. Hashemi, P. Sorrentino, A. Ghestem, P. Quilichini, K. Chuang, T. Perles-Babacaru, V. Jirsa and C. Bernard, \textbf{Inferring the mechanisms of resting-state mouse network reconfiguration upon focal region silencing}, Conference poster, NetSci 2023.}
+\section{\textbf{Publications}}
+\cvitem{2025}{\textbf{A. Ziaeemehr}, M. Woodman, L. Domide, S. Petkoski, V. Jirsa and M. Hashemi, \textbf{Virtual Brain Inference (VBI), a flexible and integrative toolkit for efficient probabilistic inference on whole-brain models}. \href{https://elifesciences.org/articles/106194}{eLife, 2025}.}
 
-\cvitem{Mar 2023}{\textbf{A. Ziaeemehr}, M. Hashemi, A. Vattikonda, V. Sip, H. Wang, S. Petkoski, M. Woodman and V. Jirsa, \textbf{Efficient Bayesian Inference for Virtual Brain Modeling: Incorporating Prior Information and automatic Algorithms for Disorder Prediction}, Conference poster, HBP Summit 2023.}
+\cvitem{2025}{A. Esmaeili, M. Demolliens, M. Viersen, \textbf{A. Ziaeemehr}, F. Isbaine, P. Huguet, F. Zaal, V. Jirsa, D. Boussaoud and M. Hashemi, \textbf{Probabilistic inference of social presence across brain scales reveals enhanced synaptic efficacy}. \href{https://doi.org/10.1038/s42003-025-08971-3}{Communications Biology, 2025}.}
 
-\cvitem{Mar 2023}{M. Woodman, M. Hashemi, \textbf{A. Ziaeemehr}, A. Vattikonda, J. Fousek and V. Jirsa \textbf{Accelerated inference on fields: virtual brains in JAX.}, Conference paper, HBP Summit 2023.}
+\cvitem{2025}{G. Rabuffo, H. Lokossou, Z. Li, \textbf{A. Ziaeemehr}, M. Hashemi, P. Quilichini, A. Ghestem, O. Arab, M. Esclapez, P. Verma and others, \textbf{Mapping global brain reconfigurations following local targeted manipulations}. \href{https://www.pnas.org/doi/10.1073/pnas.2405706122}{Proceedings of the National Academy of Sciences, 2025}.}
 
-\cvitem{Mar 2023}{Sorrentino P, Pathak, \textbf{Ziaeemehr}, Lopez, Cipriano, Bonavita, Quarantelli, Banerjee, Hashemi, Jirsa, \textbf{The virtual multiple sclerosis patient: on the clinical-radiological paradox}, Submitted to Brain.}
+\cvitem{2025}{C. Mazzara, \textbf{A. Ziaeemehr}, E. Troisi Lopez, L. Cipriano, M. Angiolelli, M. Sparaco, M. Quarantelli, C. Granata, G. Sorrentino, M. Hashemi and others, \textbf{Mapping brain lesions to conduction delays: the next step for personalized brain models in multiple sclerosis}. \href{https://doi.org/10.1002/hbm.70219}{Human Brain Mapping, 2025}.}
 
-\cvitem{Feb 2023}{Yalcinkaya, B.H., \textbf{Ziaeemehr}, A., Fousek, J., Hashemi, M., Lavanga, M., Solodkin, A., McIntosh, R., Jirsa, V. and Petkoski, S., 2023. \textbf{Personalized virtual brains of Alzheimer's Disease link dynamical biomarkers of fMRI with increased local excitability}. \href{https://www.medrxiv.org/content/10.1101/2023.01.11.23284438v1}{medRxiv, pp.2023-01}.}
+\cvitem{2025}{M. Angiolelli, D. Depannemaecker, H. Agouram, J. R{\'e}gis, R. Carron, M. Woodman, L. Chiodo, P. Triebkorn, \textbf{A. Ziaeemehr}, M. Hashemi and others, \textbf{The virtual parkinsonian patient}. \href{https://doi.org/10.1038/s41540-025-00516-y}{npj Systems Biology and Applications, 2025}.}
 
-\cvitem{Feb 2021}{\textbf{A. Ziaeemehr}, and A. Valizadeh, 2020. \textbf{Frequency-resolved functional connectivity: Role of delay and the strength of connections}, \href{https://doi.org/10.3389/fncir.2021.608655}{Frontiers in neural circuits, 2021 Mar}.}
+\cvitem{2024}{M. Hashemi, D. Depannemaecker, M. Saggio, P. Triebkorn, G. Rabuffo, J. Fousek, \textbf{A. Ziaeemehr}, V. Sip, A. Athanasiadis, M. Breyton and others, \textbf{Principles and operation of virtual brain twins}. \href{https://ieeexplore.ieee.org/document/10972118}{IEEE Transactions on Biomedical Engineering, 2024}.}
 
-\cvitem{Jul 2020}{\textbf{A. Ziaeemehr}, M. Zarei, A. Valizadeh, C. Mirasso, \textbf{Frequency-dependent organization of the brain's functional network through delayed-interactions}. \href{https://www.sciencedirect.com/science/article/abs/pii/S0893608020302926}{J. Neural Networks, 2020 Aug.}}
+\cvitem{2024}{M. Hashemi, \textbf{A. Ziaeemehr}, M. Woodman, J. Fousek, S. Petkoski and V. Jirsa, \textbf{Simulation-based inference on virtual brain models of disorders}. \href{https://doi.org/10.1088/2632-2153/ad6230}{Machine Learning: Science and Technology, 2024}.}
 
-\cvitem{Feb 2020}{\textbf{A. Ziaeemehr}, M. Zarei, A. Sheshbolouki, \textbf{Emergence of global synchronization in directed excitatory networks of type I neurons}. \href{https://www.nature.com/articles/s41598-020-60205-0}{\textit{Scientific Reports. 2020 Feb 24;10(1):1-1.}}}
+\cvitem{2024}{P. Sorrentino, A. Pathak, \textbf{A. Ziaeemehr}, E. Troisi Lopez, L. Cipriano, A. Romano, M. Sparaco, M. Quarantelli, A. Banerjee, G. Sorrentino and others, \textbf{The virtual multiple sclerosis patient}. \href{https://pubmed.ncbi.nlm.nih.gov/38974971/}{iScience, 2024}.}
+
+\cvitem{2023}{B. H. Yalcinkaya, \textbf{A. Ziaeemehr}, J. Fousek, M. Hashemi, M. Lavanga, A. Solodkin, A. R. McIntosh, V. Jirsa and S. Petkoski, \textbf{Personalized virtual brains of Alzheimer's disease link dynamical biomarkers of fMRI with increased local excitability}. \href{https://www.medrxiv.org/content/10.1101/2023.01.11.23284438v1}{medRxiv, 2023}.}
+
+\cvitem{2021}{\textbf{A. Ziaeemehr} and A. Valizadeh, \textbf{Frequency-resolved functional connectivity: Role of delay and the strength of connections}. \href{https://doi.org/10.3389/fncir.2021.608655}{Frontiers in Neural Circuits, 2021}.}
+
+\cvitem{2020}{\textbf{A. Ziaeemehr}, M. Zarei, A. Valizadeh and C. Mirasso, \textbf{Frequency-dependent organization of the brain's functional network through delayed interactions}. \href{https://www.sciencedirect.com/science/article/abs/pii/S0893608020302926}{Neural Networks, 2020}.}
+
+\cvitem{2020}{\textbf{A. Ziaeemehr}, M. Zarei and A. Sheshbolouki, \textbf{Emergence of global synchronization in directed excitatory networks of type I neurons}. \href{https://doi.org/10.1038/s41598-020-60205-0}{Scientific Reports, 2020}.}
+
+\cvitem{2011}{\textbf{A. Ziaeemehr} and R. Poursalehi, \textbf{Optical properties of silver nanoparticle dispersed in polymer matrix}. European Quantum Electronics Conference, 2011.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\textbf{Work and Research experience}}
-\cvitem{Mar 2021-Sep 2021}{Senior scientific developer at Panoptopia, \textit{preparing python packages for costing and Risk management}.}
+\section{\textbf{Work and Research Experience}}
+\cvitem{Mar 2021-Sep 2021}{Senior scientific developer at Panoptopia, \textit{preparing Python packages for costing and risk management}.}
 
-\cvitem{Sep 2020-Mar 2021}{Researcher at Institute for Research in Fundamental Sciences (IPM), Tehran, Supervisors: Prof. Alireza Valizadeh, Prof. Abdol-Hossein Vahabie, Research title: \textit{Modeling the Basal Ganglia for Parkinson disease}.}
+\cvitem{Sep 2020-Mar 2021}{Researcher at Institute for Research in Fundamental Sciences (IPM), Tehran, Supervisors: Prof. Alireza Valizadeh, Prof. Abdol-Hossein Vahabie, Research title: \textit{Modeling the Basal Ganglia for Parkinson's disease}.}
 
 %\cvitem{Oct 2020}{Neuromatch Conference 3, \textit{Effects of Anti-Hebbian learning on the synchronization and structure of directed networks with pure and hybrid inhibitory and excitatory couplings}.}
 %
-%\cvitem{Sep 2020}{Bernstein Conference online, \textit{Frequency-dependent functional connectivity: Role of delay and	connections strength}.}
+%\cvitem{Sep 2020}{Bernstein Conference online, \textit{Frequency-dependent functional connectivity: Role of delay and\connections strength}.}
 %
 %\cvitem{May 2020}{Neuromatch Conference 2, \textit{Emergence of global synchronization in directed excitatory networks of type I neurons}.}
 
-\cvitem{Apr 2019-Feb 2020}{Research assistance at Institute for Research in Fundamental Sciences (IPM), Tehran, Supervisor: Prof. Abdolhosein Abbasian, Research title: \textit{Studying the	chimera state and using neuronal population models to study the Chimera-like states on the human connectome}.}
+\cvitem{Apr 2019-Feb 2020}{Research assistant at Institute for Research in Fundamental Sciences (IPM), Tehran, Supervisor: Prof. Abdolhosein Abbasian, Research title: \textit{Studying the chimera state and using neuronal population models to study Chimera-like states on the human connectome}.}
 
-\cvitem{Apr 2018-Sep 2018}{Research visitor, at university of Granada, Computational Physics Group, Supervisor: Prof. Joaquin J. Torres, Research subject: \textit{Studying the phase-transition in the human connectom, analyzing the endurance of a weak signal in a noisy environments and the noise-induced volatility in a network of interacting LIF neurons}.}
+\cvitem{Apr 2018-Sep 2018}{Research visitor at the University of Granada, Computational Physics Group, Supervisor: Prof. Joaquin J. Torres, Research subject: \textit{Studying the phase transition in the human connectome, analyzing the endurance of a weak signal in a noisy environment and the noise-induced volatility in a network of interacting LIF neurons}.}
 
-\cvitem{Jun 2011- May 2014}{spent 2 years for compulsory military service and preparing for Ph.D. period entrance exam.}
+\cvitem{Jun 2011-May 2014}{Spent two years in compulsory military service and preparing for Ph.D. entrance exams.}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -148,60 +158,61 @@ I am a computational neuroscientist. My research focuses on developing Bayesian 
 %
 %\cvitem{2018}{\textbf{\href{https://www.ugr.es/~jtorres/}{Dr. Joaquin J. Torres lab, university of Granada}}. A short visit for 6 month  in the department of electromagnetism and matter physics, Universidad de Granada, Spain. Including the study of phase-transition phenomena and analyzing to what extent a weak signal endures in noisy environments. We also studied the noise-induced volatility in a network of interacting LIF neurons. I had useful discussions with Dr. Muñoz.}
 
-\cvitem{Jul 2020}{\textbf{TA} at Neuromatch Academy 3 weeks summer school.}
-\cvitem{2016-2017}{\textbf{Workshop Lecturer}, Holding workshops at IASBS on \href{https://gitlab.com/a.ziaeemehr/Workshop\_scripting2016}{Python scripting} for scientific programming several times, and also some other programming sessions on \href{https://github.com/Ziaeemehr/workshop_julia}{Julia}, \href{https://github.com/Ziaeemehr/cpp_workshop}{C++} and neuron simulation packages like \href{https://github.com/Ziaeemehr/workshop_brian}{Brian} and \href{https://github.com/Ziaeemehr/itng_nest}{Nest simulator}.}
+\cvitem{Jul 2020}{\textbf{TA} at Neuromatch Academy 3-week summer school.}
+\cvitem{2016-2017}{\textbf{Workshop Lecturer}, Held workshops at IASBS on \href{https://gitlab.com/a.ziaeemehr/Workshop\_scripting2016}{Python scripting} for scientific programming, and additional programming sessions on \href{https://github.com/Ziaeemehr/workshop_julia}{Julia}, \href{https://github.com/Ziaeemehr/cpp_workshop}{C++} and neuron simulation packages like \href{https://github.com/Ziaeemehr/workshop_brian}{Brian} and \href{https://github.com/Ziaeemehr/itng_nest}{Nest simulator}.}
 \cvitem{2015-2016}{Being \textbf{TA} several times in Ph.D. period in Classical Electrodynamics (I, II) and Computational Physics.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\textbf{Notable events attended}}
-\cvitem{Sep 2021}{Simulation-based Inference for scientific discovery workshop, Mackelab.}
-\cvitem{Jal 2020}{Neuromatch Academy summer school.}
-\cvitem{Jan 2018}{Comprehensive Workshop on Analysis and Interpretation of Primate Electrophysiological data, Institute for Research in Fundamental Science(\textbf{IPM}), Tehran, Iran; }
+\section{\textbf{Notable Events Attended}}
+\cvitem{Sep 2021}{Simulation-based inference for scientific discovery workshop, Mackelab.}
+\cvitem{Jul 2020}{Neuromatch Academy summer school.}
+\cvitem{Jan 2018}{Comprehensive Workshop on Analysis and Interpretation of Primate Electrophysiological Data, Institute for Research in Fundamental Sciences (\textbf{IPM}), Tehran, Iran;}
 \cvitem{Mar 2017}{5th Workshop on Advanced Techniques for Scientific Programming and Management of Open Source Software Packages, \textbf{ICTP}, Sharif University, Tehran, Iran;}
-\cvitem{Oct 2016}{Introductory School on Parallel Programming and Parallel Architecture for High-Performance Computing, \textbf{ICTP}, Trieste,Italy;}
-\cvitem{Nov 2014}{High-Performance Computing and Grid computing (HPC8), Institute for Research in Fundamental Science(\textbf{IPM}), Tehran, Iran.}
+\cvitem{Oct 2016}{Introductory School on Parallel Programming and Parallel Architecture for High-Performance Computing, \textbf{ICTP}, Trieste, Italy;}
+\cvitem{Nov 2014}{High-Performance Computing and grid computing (HPC8), Institute for Research in Fundamental Sciences (\textbf{IPM}), Tehran, Iran.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\textbf{Voluntary Work, open source software development and contributions}}
+\section{\textbf{Voluntary Work, Open-Source Software Development and Contributions}}
+\cvitem{}{%
 \begin{itemize}
-\cvitem{}{
 \item \textbf{\href{https://github.com/ITNG/ziaeeNN2020}{ziaeeNN2020}},
 This repository contains the source codes for reproducing results and figures of Neural Networks, 2020 paper.
 \item \textbf{\href{https://github.com/Ziaeemehr/SReport2020}{SReport2020}} This repository contains the source codes for reproducing results and figures of: Scientific Reports, 2020 paper.
-\item \textbf{\href{https://github.com/Ziaeemehr/Frontiers2021}{Frontiers2020}}, repository contains the source codes for reproducing results and figures of: Frontiers 2021 paper. 
+\item \textbf{\href{https://github.com/Ziaeemehr/Frontiers2021}{Frontiers2020}}, repository contains the source codes for reproducing results and figures of: Frontiers 2021 paper.
 \item Contribution on nest simulator (\href{https://github.com/nest/nestml/pull/543}{PR 543}, \href{https://github.com/nest/nestml/pull/560}{PR560}) and Brian2 (\href{https://github.com/brian-team/brian2/pull/1265}{PR1265}).
 \item \textbf{\href{https://github.com/Ziaeemehr/parkinson_modeling}{Parkinson Modeling}},
-Implementing some most cited papers on modeling BG with spiking and rate models for Parkinson disease..
-\item \href{https://github.com/ITNG/itng_toolbox}{\textbf{ModelingNeuraldynamics}} and  \href{https://github.com/Ziaeemehr/mndynamics}{\textbf{mndynamics}}, I wrote the codes for this book: "An Introduction to Modeling Neuronal Dynamics" by Borgers in Python scripts and using Brian.
+Implementing some of the most-cited papers on modeling BG with spiking and rate models for Parkinson's disease.
+\item \href{https://github.com/ITNG/itng_toolbox}{\textbf{ModelingNeuraldynamics}} and  \href{https://github.com/Ziaeemehr/mndynamics}{\textbf{mndynamics}}, I wrote the code for this book: "An Introduction to Modeling Neuronal Dynamics" by Borgers in Python scripts and using Brian.
 %\item  \textbf{\href{https://github.com/ITNG/itng_toolbox}{itng toolbox}}, IASBS Theoretical Neuroscience Group toolbox, to analysis the time series, spike trains and graphs in python (Pypi: itng);
 \item \textbf{\href{https://github.com/Ziaeemehr/SBI}{SBI}},
 \textit{sbi} package by mackelab is a \textit{PyTorch} package for simulation-based inference. Simulation-based inference is the process of finding parameters of a simulator from observations. I provide some wrapper to integrate \textit{sbi} with the \textit{NEST simulator} and \textit{scipy}.
-\item \textbf{\href{https://github.com/Ziaeemehr/workshop_scripting}{workshop scripting}} This repository is created for weekly sessions of Python scripting course at IASBS and
-including many example and application from simple to complex.
-\item \textbf{\href{https://github.com/Ziaeemehr/workshop_julia}{workshop julia}} 
-The source code and examples for the Julia workshop including benchmarking simple
-and generalized Kuramoto model.
+\item \textbf{\href{https://github.com/Ziaeemehr/workshop_scripting}{workshop scripting}} This repository was created for weekly sessions of a Python scripting course at IASBS and
+includes many examples and applications from simple to complex.
+\item \textbf{\href{https://github.com/Ziaeemehr/workshop_julia}{workshop julia}}
+The source code and examples for the Julia workshop, including benchmarking simple
+and generalized Kuramoto models.
 \item \textbf{\href{https://github.com/Ziaeemehr/cpp_workshop}{workshop C++}}
 The source code and examples for the C++ workshop.
-}
 \end{itemize}
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\textbf{Skills}}
 \cvitem{OS}{Ubuntu;}
 \cvitem{Languages}{Python, C++, Julia;}
-\cvitem{packages}{Nest Simulator, Brian, MNE-Python, TVB, ...;}
+\cvitem{Packages}{Nest Simulator, Brian, MNE-Python, TVB, ...;}
 \cvitem{GUI}{PyQtGraph, Dash}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\textbf{Honors and Awards}}
-\cvitem{Jan 2018}{Scholarship by the Ministry of science of Iran for research at the \textit{Department of Electromagnetism and Matter Physics, Universidad de Granada, Spain}; }
-\cvitem{2014}{Rank 26 th among about 5000 people in entrance exames of Ph.D.;}
+\cvitem{Jan 2018}{Scholarship by the Ministry of Science of Iran for research at the \textit{Department of Electromagnetism and Matter Physics, Universidad de Granada, Spain};}
+\cvitem{2014}{Rank 26th among about 5,000 people in entrance exams for the Ph.D.;}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{\textbf{Languages}}
-\cvlistdoubleitem{English:reading,writing,listening}{Very good}
+\cvlistdoubleitem{English: reading, writing, listening}{Very good}
+\cvlistdoubleitem{French}{A2}
 \cvlistdoubleitem{Persian}{Native}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -216,14 +227,14 @@ The source code and examples for the C++ workshop.
 %\subsection{\textbf{Reading inside Neuroscience}}
 %\begin{itemize}
 %\cvitem{}{
-%	\item Theoritical Neuroscience (Abbott);
-%	\item Networks: An Introduction (Newman);
-%	\item Modeling neuronal dynamics, (Borgers);
-%	\item Neuroscience : Exploring the Brain (Connors) ;
-%	\item Dynamical Systems in Neuroscience (Izhikevich);
-%	\item An Introduction to Transfer Entropy, (Bossomaier)
-%	\item Directed Information Measures in Neuroscience, (Wibral).
-%	\item Neuronal Dynamics From Single Neurons to Networks ... (Grestner);		
+%\t\item Theoritical Neuroscience (Abbott);
+%\t\item Networks: An Introduction (Newman);
+%\t\item Modeling neuronal dynamics, (Borgers);
+%\t\item Neuroscience : Exploring the Brain (Connors) ;
+%\t\item Dynamical Systems in Neuroscience (Izhikevich);
+%\t\item An Introduction to Transfer Entropy, (Bossomaier)
+%\t\item Directed Information Measures in Neuroscience, (Wibral).
+%\t\item Neuronal Dynamics From Single Neurons to Networks ... (Grestner);\t\t\t
 %}
 %\end{itemize}
 
@@ -238,6 +249,3 @@ The source code and examples for the C++ workshop.
 %{\href{mailto: shahbazi@cc.iut.ac.ir}{ shahbazi@cc.iut.ac.ir}}{Tel: +98 311 3913755}   
 
 \end{document}
-
-
-

@@ -27,6 +27,23 @@ __pycache__/
 # Logs
 *.log
 
+# LaTeX build artifacts (keep .tex and .pdf tracked)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.xdv
+
 # Local env
 .env
 

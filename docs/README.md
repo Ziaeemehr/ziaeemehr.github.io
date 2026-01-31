@@ -1,17 +1,81 @@
-# This my public page
+# Personal Website - Abolfazl Ziaeemehr
 
-The website is available here: https://ziaeemehr.github.io/
+This repository contains the source code for my personal academic website hosted at [ziaeemehr.github.io](https://ziaeemehr.github.io).
 
-<a href="https://www.researchgate.net/profile/Abolfazl_Ziaeemehr3"><img src="https://ziaeemehr.github.io/images/RG.png" width="25"></a>
+## About
 
+This is a static website showcasing my academic profile, including:
+- Personal information and biography
+- CV and publications
+- Research projects
+- Teaching activities
+- Contact information
 
+## Structure
 
-##### My GitHub Stats
+```
+docs/
+├── index.html          # Home page
+├── cv.html            # Curriculum Vitae
+├── publications.html  # Publications list
+├── projects.html      # Research projects
+├── teaching.html      # Teaching activities
+├── contact.html       # Contact information
+├── images/            # Image assets
+├── scripts/           # JavaScript files
+└── styles/            # CSS stylesheets
+```
 
-  ![Github Stats By Mehmet](https://github-readme-stats.vercel.app/api?username=Ziaeemehr&show_icons=true&title_color=fff&icon_color=79ff97&text_color=9f9f9f&bg_color=151515)  
-</br>
+## Technologies
 
-Repositories of my papers:
-- [Frontiers 2021](https://github.com/Ziaeemehr/Frontiers2021)
-- [Neural Network 2020](https://github.com/ITNG/ziaeeNN2020)
-- [Scientific Reports 2020](https://github.com/Ziaeemehr/SReport2020)
+- HTML5
+- CSS3
+- JavaScript
+- GitHub Pages
+
+## Local Development
+
+To view the website locally:
+
+1. Clone the repository:
+```bash
+git clone https://github.com/Ziaeemehr/ziaeemehr.github.io.git
+cd ziaeemehr.github.io
+```
+
+2. Open the HTML files directly in your browser, or use a local server:
+```bash
+# Using Python
+python -m http.server 8000
+
+# Using Node.js (if you have http-server installed)
+npx http-server docs/
+```
+
+3. Navigate to `http://localhost:8000/docs/` in your browser
+
+## Deployment
+
+This site is automatically deployed via GitHub Pages from the `docs/` folder on the `main` branch.
+
+## Updates
+
+To update the website:
+
+1. Make your changes to the HTML/CSS/JS files
+2. Commit and push to the `main` branch:
+```bash
+git add .
+git commit -m "Update content"
+git push origin main
+```
+
+3. Changes will be live at [ziaeemehr.github.io](https://ziaeemehr.github.io) within a few minutes
+
+## License
+
+© 2026 Abolfazl Ziaeemehr. All rights reserved.
+
+## Contact
+
+For any inquiries, please visit the [contact page](https://ziaeemehr.github.io/contact.html).
