@@ -49,3 +49,7 @@ __pycache__/
 
 # Mac Finder
 .DS_Store?
+
+# Local agent state and plans (not tracked)
+.omc/
+plans/

@@ -4,12 +4,12 @@ This repository contains the source code for my personal academic website hosted
 
 ## About
 
-This is a static website showcasing my academic profile, including:
-- Personal information and biography
-- CV and publications
-- Research projects
-- Teaching activities
-- Contact information
+A static portfolio of my scientific software, publications and CV:
+- Home page with a live logistic-map bifurcation diagram and featured software
+- Software catalogue (JaxCont, lyapax, VBI, LitForge, MD Viewer and more)
+- Publications, rendered from `ziaeemehr.bib`
+- CV (HTML, plus the LaTeX source and PDF in `cv/`)
+- Teaching and contact pages
 
 ## Structure
 
@@ -18,11 +18,13 @@ docs/
 ├── index.html          # Home page
 ├── cv.html            # Curriculum Vitae
 ├── publications.html  # Publications list
-├── projects.html      # Research projects
+├── projects.html      # Software catalogue
+├── ziaeemehr.bib      # Single source for the publication lists
+├── cv/                # Ziaeemehr.tex and the built Ziaeemehr.pdf
 ├── teaching.html      # Teaching activities
 ├── contact.html       # Contact information
 ├── images/            # Image assets
-├── scripts/           # JavaScript files
+├── scripts/           # orbit.js (hero figure), publications.js (bib renderer)
 └── styles/            # CSS stylesheets
 ```
 
@@ -43,16 +45,21 @@ git clone https://github.com/Ziaeemehr/ziaeemehr.github.io.git
 cd ziaeemehr.github.io
 ```
 
-2. Open the HTML files directly in your browser, or use a local server:
+2. Serve the `docs/` folder (the publication lists fetch `ziaeemehr.bib`, which
+   browsers block for pages opened as `file://`):
 ```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js (if you have http-server installed)
-npx http-server docs/
+python -m http.server 8000 --directory docs
 ```
 
-3. Navigate to `http://localhost:8000/docs/` in your browser
+3. Open `http://localhost:8000/` in your browser.
+
+## Updating content
+
+- **Publications:** edit `docs/ziaeemehr.bib`. Both the home page (pinned keys in
+  `data-keys`) and the publications page read it.
+- **Email:** links carry the address reversed in `data-mail` and `scripts/email.js`
+  rebuilds it in the browser, so it never appears as plain text in the HTML.
+- **CV:** edit `docs/cv/Ziaeemehr.tex` and rebuild the PDF, e.g. `tectonic docs/cv/Ziaeemehr.tex`.
 
 ## Deployment
 

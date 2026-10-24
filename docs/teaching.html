@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Abolfazl Ziaeemehr | Teaching</title>
+  <title>Teaching | Abolfazl Ziaeemehr</title>
+  <meta name="description" content="Courses, workshops and teaching material by Abolfazl Ziaeemehr." />
+  <meta property="og:title" content="Abolfazl Ziaeemehr" />
+  <meta property="og:description" content="Fast, differentiable software for simulating dynamical systems and fitting them to data." />
+  <meta property="og:image" content="https://ziaeemehr.github.io/images/og.png" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b6b66'/%3E%3Cpath d='M5 24c6 0 7-14 11-14s4 8 6 8 3-6 5-6' fill='none' stroke='%23fff' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400..700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap" />
   <link rel="stylesheet" href="styles/site.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap">
-      <div class="brand">
-        <a href="index.html">Abolfazl Ziaeemehr</a>
-        <span>Computational Neuroscientist</span>
-      </div>
+      <a class="brand" href="index.html">Abolfazl Ziaeemehr</a>
       <nav class="site-nav" aria-label="Main">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
+        <a href="projects.html">Software</a>
         <a href="publications.html">Publications</a>
-        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
         <a href="teaching.html" aria-current="page">Teaching</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -26,46 +30,82 @@
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-card">
-          <h1>Teaching and Workshops</h1>
-          <p>Hands-on instruction in scientific computing, neural simulation, and modeling.</p>
-        </div>
-        <div class="card">
-          <h3>Formats</h3>
-          <p>University courses, summer schools, and focused technical workshops.</p>
+    <section class="page-intro">
+      <div class="wrap">
+        <h1>Teaching</h1>
+        <p>Courses and workshops on scientific computing, machine learning and neural simulation. Each workshop has its material on GitHub, built around code you run yourself.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap cv-grid">
+        <h2>Courses and schools</h2>
+        <div>
+          <ol class="timeline" reversed>
+            <li>
+              <span class="when">2024</span>
+              <div>
+                <h3><a href="https://github.com/Ziaeemehr/workshop_hpcpy">High-performance computing with Python</a></h3>
+                <p>Workshop for the Theoretical Neuroscience Group, INS: profiling, Numba, JAX, CuPy, Cython, SWIG and pybind11.</p>
+              </div>
+            </li>
+            <li>
+              <span class="when">Jul 2020</span>
+              <div>
+                <h3>Teaching assistant, Neuromatch Academy</h3>
+                <p>Three-week online summer school in computational neuroscience.</p>
+              </div>
+            </li>
+            <li>
+              <span class="when">2016 – 2017</span>
+              <div>
+                <h3>Workshop lecturer, IASBS</h3>
+                <p>Weekly sessions on <a href="https://github.com/Ziaeemehr/workshop_scripting">Python scripting</a>, <a href="https://github.com/Ziaeemehr/workshop_julia">Julia</a>, <a href="https://github.com/Ziaeemehr/cpp_workshop">C++</a> and the neural simulators <a href="https://github.com/Ziaeemehr/workshop_brian">Brian2</a> and <a href="https://github.com/Ziaeemehr/itng_nest">NEST</a>.</p>
+              </div>
+            </li>
+            <li>
+              <span class="when">2015 – 2016</span>
+              <div>
+                <h3>Teaching assistant, IASBS</h3>
+                <p>Classical electrodynamics I and II, and computational physics.</p>
+              </div>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="wrap">
-        <h2>Teaching Experience</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <h4>Teaching Assistant, Neuromatch Academy (Jul 2020)</h4>
-            <p>Three-week summer school program.</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Workshop Lecturer at IASBS (2016 - 2017)</h4>
-            <p>Python scripting, Julia, C++, and neuron simulation packages (Brian, NEST).</p>
-          </div>
-          <div class="timeline-item">
-            <h4>Teaching Assistant (2015 - 2016)</h4>
-            <p>Classical Electrodynamics (I, II) and Computational Physics.</p>
-          </div>
+      <div class="wrap cv-grid">
+        <h2>Self-study material</h2>
+        <div>
+          <dl class="skills">
+            <dt><a href="https://github.com/Ziaeemehr/dl_eeg">Deep learning by doing</a></dt>
+            <dd>A milestone course from tensors and autodiff to convolutional networks for EEG classification, one runnable project per step.</dd>
+            <dt><a href="https://github.com/Ziaeemehr/workshop_jax">JAX</a>, <a href="https://github.com/Ziaeemehr/workshop_numba">Numba</a> and <a href="https://github.com/Ziaeemehr/workshop_sbi">simulation-based inference</a></dt>
+            <dd>Notebooks that start from the basics and end with a working model.</dd>
+            <dt><a href="https://github.com/Ziaeemehr/signal_processing">Signal processing</a></dt>
+            <dd>Fourier and wavelet transforms and time-frequency analysis.</dd>
+            <dt><a href="https://github.com/ITNG/ModelingNeuralDynamics">Modeling neuronal dynamics</a></dt>
+            <dd>Python companion to Börgers' textbook <em>An Introduction to Modeling Neuronal Dynamics</em>.</dd>
+          </dl>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="wrap footer-grid">
-      <p>27 Boulevard Jean Moulin, 13005 Marseille, France</p>
-      <p>Email: <a href="mailto:abolfazl.ziaee-mehr@univ-amu.fr">abolfazl.ziaee-mehr@univ-amu.fr</a></p>
-      <p>Github: <a href="https://github.com/Ziaeemehr">github.com/Ziaeemehr</a></p>
+    <div class="wrap">
+      <p>Abolfazl Ziaeemehr, Amiens, France. <a href="contact.html" data-mail="rf.eidracip-u@eeaiz.a" data-mail-show>a.ziaee [at] u-picardie.fr</a></p>
+      <nav aria-label="Elsewhere">
+        <a href="https://github.com/Ziaeemehr">GitHub</a>
+        <a href="https://scholar.google.com/citations?hl=en&amp;user=rmsueR0AAAAJ">Google Scholar</a>
+        <a href="https://orcid.org/0000-0002-4696-9947">ORCID</a>
+        <a href="https://www.linkedin.com/in/ziaeemehr/">LinkedIn</a>
+      </nav>
     </div>
   </footer>
+
+  <script src="scripts/email.js" defer></script>
 </body>
 </html>
