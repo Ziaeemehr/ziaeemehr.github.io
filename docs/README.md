@@ -11,3 +11,4 @@ Preview locally (the publication lists fetch the `.bib` file, so `file://` won't
 - Publications: edit `docs/ziaeemehr.bib`; pinned home-page entries are the `data-keys` in `index.html`.
 - CV: edit `docs/cv/Ziaeemehr.tex`, then `tectonic docs/cv/Ziaeemehr.tex`.
 - Email links are built by `docs/scripts/email.js` from a reversed address in `data-mail`.
+- After changing CSS or JS, bump the `?v=` number on their links in every page so browsers fetch the new files.
