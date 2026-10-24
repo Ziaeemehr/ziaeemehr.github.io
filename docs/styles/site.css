@@ -312,6 +312,37 @@ pre {
   margin-bottom: 24px;
 }
 
+.hero-id {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.hero-id h1 {
+  margin-bottom: 0;
+}
+
+.portrait {
+  flex: none;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--rule);
+}
+
+@media (max-width: 520px) {
+  .hero-id {
+    gap: 16px;
+  }
+
+  .portrait {
+    width: 72px;
+    height: 72px;
+  }
+}
+
 .hero .lead {
   font-size: var(--t-lg);
   line-height: 1.5;
