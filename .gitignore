@@ -27,7 +27,7 @@ __pycache__/
 # Logs
 *.log
 
-# LaTeX build artifacts (keep .tex and .pdf tracked)
+# LaTeX build artifacts (the CV PDF is built by the Pages workflow)
 *.aux
 *.bbl
 *.bcf
@@ -43,6 +43,7 @@ __pycache__/
 *.synctex.gz
 *.toc
 *.xdv
+docs/cv/Ziaeemehr.pdf
 
 # Local env
 .env
