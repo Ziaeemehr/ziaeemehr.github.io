@@ -54,3 +54,6 @@ docs/cv/Ziaeemehr.pdf
 # Local agent state and plans (not tracked)
 .omc/
 plans/
+
+# Local AI tool config (not site content)
+.clinerules
